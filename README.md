@@ -6,10 +6,10 @@ tar -czvf fonts.tar.gz fonts
 ```
 
 To remove current fonts.tar.gz file & upload current fonts in fonts:
-'''
+```
 rm -f fonts.tar.gz
 tar -czf fonts.tar.gz -C fonts .
-'''
+```
 
 # Installation
 
