@@ -5,6 +5,12 @@ Heroku buildpack that add native support for emojis on a Heroku-18 stack. This b
 tar -czvf fonts.tar.gz fonts
 ```
 
+To remove current fonts.tar.gz file & upload current fonts in fonts:
+'''
+rm -f fonts.tar.gz
+tar -czf fonts.tar.gz -C fonts .
+'''
+
 # Installation
 
 You just need to [add this buildpack](https://devcenter.heroku.com/articles/buildpacks#setting-a-buildpack-on-an-application) to the app's buildpack list, prior any buildpack.
